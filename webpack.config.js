@@ -5,6 +5,14 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: 'development',
 
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000
+  },
+
+  devtool: 'inline-source-map',
+
   entry: './src/index.js',
 
   output: {
