@@ -1,6 +1,9 @@
 const path = require('path');
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const DashboardPlugin = require('webpack-dashboard/plugin');
+const Dashboard = require('webpack-dashboard');
+const dashboard = new Dashboard();
 
 module.exports = {
   mode: 'development',
@@ -39,6 +42,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./src/index.html",
       filename: "./index.html",
-    })
+    }),
+    new DashboardPlugin(dashboard.setData)
   ]
 };
