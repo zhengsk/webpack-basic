@@ -1,10 +1,12 @@
 const path = require('path');
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const DashboardPlugin = require('webpack-dashboard/plugin');
 const Dashboard = require('webpack-dashboard');
 const dashboard = new Dashboard();
 
+ 
 module.exports = {
   mode: 'development',
 
@@ -43,6 +45,7 @@ module.exports = {
       template: "./src/index.html",
       filename: "./index.html",
     }),
-    new DashboardPlugin(dashboard.setData)
+    new DashboardPlugin(dashboard.setData),
+    new BundleAnalyzerPlugin(),
   ]
 };

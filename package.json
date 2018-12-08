@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open",
-    "buid": "webpack"
+    "build": "webpack --mode=production"
   },
   "author": "zsk daer chengguan",
   "license": "ISC",
@@ -22,6 +22,7 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.27.1",
+    "webpack-bundle-analyzer": "^3.0.3",
     "webpack-cli": "^3.1.2",
     "webpack-dashboard": "^2.0.0",
     "webpack-dev-server": "^3.1.10"

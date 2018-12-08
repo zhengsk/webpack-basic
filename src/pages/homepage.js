@@ -6,7 +6,7 @@ export default class Homepage extends React.Component {
     return (
       <div>
         <span>
-          Hello Webpack basic
+          Hello Webpack basic!!
         </span>
       </div>
     )
