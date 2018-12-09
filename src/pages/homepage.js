@@ -1,7 +1,6 @@
 import React from 'react';
 
-export default class Homepage extends React.Component {
-
+export default class Homepage extends React.Purecomponent {
   render() {
     return (
       <div>
@@ -9,6 +8,6 @@ export default class Homepage extends React.Component {
           Hello Webpack basic!!
         </span>
       </div>
-    )
+    );
   }
 }
