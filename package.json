@@ -4,13 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --open",
+    "dev": "webpack-dev-server --open --quiet",
     "build": "webpack --mode=production"
   },
   "author": "zsk daer chengguan",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
@@ -29,6 +38,7 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
+    "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   }

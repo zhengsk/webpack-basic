@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom';
 
 import Homepage from './pages/homepage';
 
-ReactDOM.render(<Homepage />, document.querySelector('#app'));
+ReactDOM.render(<Homepage content="Home page!" />, document.querySelector('#app'));

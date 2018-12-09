@@ -34,9 +34,6 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
-          },
         },
       },
 
@@ -49,6 +46,8 @@ module.exports = {
       filename: './index.html',
     }),
     new DashboardPlugin(dashboard.setData),
-    new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin({
+      openAnalyzer: false,
+    }),
   ],
 };
